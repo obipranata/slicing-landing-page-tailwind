@@ -62,7 +62,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav id="header" class="fixed top-0 w-full border-b-[1px] border-primary/10 z-10 bg-white/90 backdrop-blur">
+  <nav id="header" class="fixed top-0 w-full border-b-[1px] border-primary/10 z-10">
     <div class="container flex flex-wrap lg:flex-nowrap justify-between items-center lg:px-0 gap-5 lg:gap-[70px] ">
 
       <div class="img-box">
@@ -181,7 +181,7 @@
         </ul>
       </div>
       <div class="box-img flex flex-wrap md:flex-nowrap items-center justify-center gap-7">
-        <div class="relative play-video bg-[url('/assets/images/join1.png')] w-[270px] h-[368px] rounded-lg">
+        <div class="relative play-video bg-[url('./assets/images/join1.png')] w-[270px] h-[368px] rounded-lg">
           <a href="#">
             <div
               class="absolute m-auto left-0 right-0 bottom-[45%] flex items-center justify-center play-button rounded-full bg-white w-[44px] h-[44px]">
@@ -657,6 +657,20 @@
   </section>
   <!-- Akhir Footer -->
 
+  <script>
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (currentScrollPos > 80) {
+        document.getElementById("header").classList.add("bg-white/90");
+        document.getElementById("header").classList.add("backdrop-blur");
+        document.getElementById("header").classList.remove("bg-transparent");
+      } else {
+        document.getElementById("header").classList.add("bg-transparent");
+        document.getElementById("header").classList.remove("bg-white/90");
+        document.getElementById("header").classList.remove("backdrop-blur");
+      }
+    }
+  </script>
   <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
 </body>
 
