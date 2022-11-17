@@ -7,10 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap"
     rel="stylesheet">
 
+  <!-- Fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,9 +21,12 @@
   <!-- Flowbite CSS -->
   <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
 
+  <!-- Tailwindcss -->
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- My Css -->
   <link rel="stylesheet" href="assets/css/style.css">
+
   <script>
     tailwind.config = {
       theme: {
@@ -45,7 +51,6 @@
       }
     }
   </script>
-  <link rel="stylesheet" href="style.css">
   <style type="text/tailwindcss">
     @layer utilities {
 
@@ -55,6 +60,8 @@
 </head>
 
 <body>
+
+  <!-- Navbar -->
   <nav id="header" class="fixed top-0 w-full border-b-[1px] border-primary/10 z-10 bg-white/90 backdrop-blur">
     <div class="container flex flex-wrap lg:flex-nowrap justify-between items-center lg:px-0 gap-5 lg:gap-[70px] ">
 
@@ -127,7 +134,9 @@
 
     </div>
   </nav>
+  <!-- Akhir Navbar -->
 
+  <!-- Hero -->
   <section id="hero" class="bg-[linear-gradient(311.76deg,_#D4E7FE_-15.24%,_#FFFFFF_78.85%)]">
     <div class="container flex flex-wrap lg:flex-nowrap justify-center items-center lg:justify-between">
       <div class="hero-text w-[500px] text-left">
@@ -154,22 +163,24 @@
       </div>
     </div>
   </section>
+  <!-- Akhir Hero -->
 
+  <!-- About -->
   <section id="why-join" class="py-[34px]">
     <div class="container flex lg:flex-nowrap flex-wrap-reverse items-center justify-center lg:justify-between gap-5">
-      <div class="why-join-title w-[406px]">
+      <div class="why-join-title w-[406px] text-center md:text-start">
         <span class="small-title">Whats Netboks?</span>
         <h1 class="big-title leading-[48px] mt-2.5">Why Join to Netbook Social Network?</h1>
         <p class="text-[16px] mt-4">
           Recent surveys have indicated that small businesses recognise the need they have to connect with consumer.
         </p>
-        <ul class="mt-6">
+        <ul class="mt-6 flex md:block gap-4 justify-center">
           <li>Groups</li>
           <li>Messages</li>
           <li>Share</li>
         </ul>
       </div>
-      <div class="box-img flex items-center gap-7">
+      <div class="box-img flex flex-wrap md:flex-nowrap items-center justify-center gap-7">
         <div class="relative play-video bg-[url('/assets/images/join1.png')] w-[270px] h-[368px] rounded-lg">
           <div
             class="absolute m-auto left-0 right-0 bottom-1/2 flex items-center justify-center play-button rounded-full bg-white w-[44px] h-[44px]">
@@ -184,9 +195,11 @@
       </div>
     </div>
   </section>
+  <!-- Akhir About -->
 
+  <!-- Achievement -->
   <section id="achievement" class="py-[75px]">
-    <div class="container flex flex-wrap lg:flex-nowrap justify-center lg:justify-between gap-7">
+    <div class="container flex flex-wrap-reverse md:flex-wrap lg:flex-nowrap justify-center lg:justify-between gap-7">
       <div class="cards flex flex-wrap justify-center md:flex-nowrap gap-6">
         <div class="card hover:shadow-[0px_26px_49px_rgba(146,_165,_184,_0.14)] border-[1px] hover:border-none">
           <div class="card-title flex items-center gap-2.5 mb-[39px]">
@@ -215,7 +228,7 @@
             friends.
           </p>
           <div class="link">
-            <a href="" class="text-primary">
+            <a href="" class="text-[#4A4A56] hover:text-primary">
               Join Our Community
               <span class="ml-[12px]">
                 <i class="fa-solid fa-arrow-right"></i>
@@ -244,7 +257,7 @@
             friends.
           </p>
           <div class="link">
-            <a href="" class="text-[#4A4A56]">
+            <a href="" class="text-[#4A4A56] hover:text-primary">
               Go To Awards
               <span class="ml-[12px]">
                 <i class="fa-solid fa-arrow-right"></i>
@@ -271,7 +284,9 @@
       </div>
     </div>
   </section>
+  <!-- Akhir Achievement -->
 
+  <!-- Community -->
   <section id="community"
     class="bg-[linear-gradient(0deg,_rgba(241,_246,_253,_0)_1.63%,_#F1F6FD_20.5%,_#F1F6FD_58.57%,_#FFFFFF_100%);] pb-[80px]">
     <div class="container text-center">
@@ -365,7 +380,9 @@
       </div>
     </div>
   </section>
+  <!-- Akhir Community -->
 
+  <!-- Members -->
   <section id="members" class="md:mt-[46px] py-[84px]">
     <div class="container text-center">
       <div class="small-title ">
@@ -429,7 +446,9 @@
       </div>
     </div>
   </section>
+  <!-- Akhir Members -->
 
+  <!-- Get App -->
   <section id="get-app" class="bg-[#E5F0FD] mt-[46px] pt-[44px] pb-5 lg:pb-0">
     <div class="container flex flex-wrap-reverse gap-y-5 lg:flex-nowrap justify-center lg:justify-between items-center">
       <div class="title-box w-[344px]">
@@ -449,11 +468,13 @@
         </div>
       </div>
       <div class="img-box">
-        <img class=" h-[518px]" src="./assets/images/mobile_mockup1.png" alt="">
+        <img class="md:max-h-[518px]" src="./assets/images/mobile_mockup1.png" alt="">
       </div>
     </div>
   </section>
+  <!-- Akhir Get App -->
 
+  <!-- News -->
   <section id="news" class="mt-[96px] py-[34px]">
     <div class="container text-center">
       <div class="small-title">
@@ -521,7 +542,9 @@
       </div>
     </div>
   </section>
+  <!-- Akhir News -->
 
+  <!-- Footer -->
   <section id="footer" class="mt-[96px]">
     <div class="footer-menu bg-[#2B2B39] pt-[78px] pb-[78px]">
       <div class="container flex flex-wrap gap-y-8 justify-between">
@@ -610,6 +633,7 @@
       </div>
     </div>
   </section>
+  <!-- Akhir Footer -->
 
   <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
 </body>
